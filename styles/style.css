@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --red: red;
+}
+
+@font-face {
+    font-family: futurak;
+    src: url(../assets/fonts/futurak.ttf);
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+}
+
+
+nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.logo-img {
+    width: 160px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 15px;
+    font-size: 1.2rem;
+}
+
+.franchise-btn {
+    padding: 14px 16.5px;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.order-btn {
+    padding: 13px 16.5px;
+    border: none;
+    background-color: var(--red);
+    color: white;
+    border-radius: 50px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.bef-order {
+    margin: 0px 3px;
+    display: none;
+}
+
+.arrow {
+    padding: 5px;
+    background-color: white;
+    color: var(--red);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.menu-bar {
+    display: none;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px;
+}
+
+.mobile-menu {
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    display: none;
+    transition: 0.5s ease;
+}
+
+.cross-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-xmark {
+    font-size: 2rem;
+
+}
+
+.mobile-menu-items a {
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+}
+
+.first-heading {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 30px;
+    font-size: 2.5rem;
+    padding: 10px 0px;
+}
+
+.rest-heading {
+    font-family: futurak;
+    font-size: 2.7rem;
+
+}
+
+.cards-para {
+    text-align: center;
+    color: rgb(115, 114, 114);
+    font-size: 18px;
+}
+
+.restuarent-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.restuarent-img {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.card {
+
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.restuarent-btn {
+    margin: 20px 0px;
+    padding: 13px 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 950px) {
+    .none {
+        display: none;
+    }
+
+    .menu-bar {
+        display: flex;
+    }
+
+    .logo-img {
+        width: 120px;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    .bef-order {
+        display: inline;
+    }
+}
+
