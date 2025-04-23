@@ -291,6 +291,20 @@ nav {
     height: 250px;
 
 }
+.village-card{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.village-btn{
+    background-color: rgb(71, 164, 71);
+    border: none;
+    padding: 15px 25px;
+}
+.village-btn:hover{
+    background-color: transparent;
+    border: 1px solid;
+}
 
 @media(max-width: 950px) {
     .none {
@@ -334,6 +348,13 @@ nav {
 
     .reverse {
         flex-wrap: wrap-reverse;
+    }
+    .village-image{
+        width: 95%;
+        margin: 10px;
+    }
+    .village-card{
+        flex-direction: column;
     }
    
 }
