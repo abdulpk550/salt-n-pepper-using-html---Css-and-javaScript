@@ -239,12 +239,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-   
+
 
 }
 
 .express-card {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +263,8 @@ nav {
     align-items: center;
     flex-direction: column;
 }
-.express-city-name{
+
+.express-city-name {
     text-align: center;
     color: rgb(239, 79, 79);
     letter-spacing: 3px;
@@ -272,13 +273,15 @@ nav {
     font-size: 15px;
     font-family: serif;
 }
-.express-heading{
+
+.express-heading {
     text-align: center;
     font-size: 1.5rem;
     margin: 10px 0px;
-    
+
 }
-.express-address{
+
+.express-address {
     text-align: center;
 }
 
@@ -291,20 +294,109 @@ nav {
     height: 250px;
 
 }
-.village-card{
+
+.village-card {
     display: flex;
     gap: 50px;
     margin-top: 50px;
 }
-.village-btn{
+
+.village-btn {
     background-color: rgb(71, 164, 71);
     border: none;
     padding: 15px 25px;
 }
-.village-btn:hover{
+
+.village-btn:hover {
     background-color: transparent;
     border: 1px solid;
 }
+
+.opening-heading {
+    font-weight: 200;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.opening {
+    font-size: 20px;
+}
+
+.opening-card-heading {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.opening-card-heading span {
+    font-weight: bold;
+
+}
+
+.opening-cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.opening-card {
+    width: 30%;
+    height: auto;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.opening-card>img {
+    margin: 15px 0px;
+}
+
+.opening-para {
+    color: rgb(254, 74, 74);
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 10px 0px;
+
+}
+
+.opening-city {
+    margin: 10px 0px;
+    font-size: 22px;
+
+}
+
+.social-feed {
+    margin-top: 50px;
+}
+
+.social-feed-heading {
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.social-images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-img {
+    width: 18%;
+    /* margin: 10px; */
+}
+
+
 
 @media(max-width: 950px) {
     .none {
@@ -349,12 +441,27 @@ nav {
     .reverse {
         flex-wrap: wrap-reverse;
     }
-    .village-image{
+
+    .village-image {
         width: 95%;
         margin: 10px;
     }
-    .village-card{
+
+    .village-card {
         flex-direction: column;
     }
-   
+
+}
+
+@media(max-width: 786px) {
+    .opening-card {
+        width: 40%;
+
+    }
+}
+
+@media(max-width: 640px) {
+    .opening-card {
+        width: 89%;
+    }
 }

@@ -8,3 +8,4 @@ menuBtn.addEventListener("click", () => {
 crossBtn.addEventListener("click",()=>{
     mobileMenu.style.display = "none"
 })
+
