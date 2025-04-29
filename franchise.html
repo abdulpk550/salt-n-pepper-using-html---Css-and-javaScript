@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/franchise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <!-- nav-bar started here  -->
+        <nav>
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars" id="menu-btn"></i>
+            </div>
+            <div class="logo">
+                <img class="logo-img" src="./assets/logo.webp" alt="Logo">
+            </div>
+            <div class="menu-items">
+                <a class="none" href="index.html">Home</a>
+                <a class="none" href="about.html">About Us</a>
+                <a class="none" href="Publication.html">Publications</a>
+
+                <button class="franchise-btn none">Get a Franchise</button>
+                <button class="order-btn"><span class="bef-order"><i
+                            class="fa-solid fa-arrow-right"></i></span></span>Order Online <span class="arrow none"><i
+                            class="fa-solid fa-arrow-right "></i></span></button>
+            </div>
+
+        </nav>
+        <!-- nav-bar ended here  -->
+
+        <!-- styling for mobile menu -->
+        <div class="mobile-menu" id="mbl-menu">
+            <div class="cross-icon">
+                <i class="fa-solid fa-xmark " id="cross-btn"></i>
+            </div>
+            <div class="mobile-menu-items">
+                <a href="index.html">Home</a>
+                <hr>
+                <a href="about.html">About Us</a>
+                <hr>
+                <a href="Publication.html">Publications</a>
+                <hr>
+                <a href="franshise.html">Get a Franchise</a>
+                <hr>
+            </div>
+        </div>
+        <!-- styling for mobile menu ended here -->
+    </header>
+
+    <!-- main section started  -->
+    <main>
+        <div class="franchise-form">
+            <h1 class="form-heading">Get a Franchise</h1>
+        </div>
+
+        <div class="inputs">
+            <label for="name">Name</label>
+            <input type="text" id="name" >
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" >
+            
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" >
+            
+            <label for="mobile">Mobile Numberr</label>
+            <input type="number" id="mobile" >
+            
+            <label for="city">City</label>
+            <input type="text" id="city" >
+            
+            <label for="province">Province</label>
+            <input type="text" id="province" >
+            
+            <label for="country">Country</label>
+            <input type="text" id="country" >
+            
+            <label for="brand">Brands</label>
+            <input type="text" id="brand" >
+            
+        </div>
+    </main>
+    <!-- main section ended -->
+
+
+    <!-- footer started  -->
+    <footer
+        class="w-full mx-auto bg-[url('assets/bg-img.webp')] object-cover bg-no-repeat shadow-[0_-0.5px_0_#D1D5DB]  py-10 ">
+        <div class="footer-items max-w-[80%] mx-auto mt-10 flex flex-wrap justify-between ">
+            <div
+                class="about lg:w-[25%] md:w-[30%] sm:w-[40%] w-full lg:block md:block sm:block flex justify-center items-center flex-col ">
+                <img class="w-[8rem]" src="assets/logo.webp" alt="">
+                <p class="mt-4 lg:text-left md:text-left sm:text-left text-center">The Salt’n Pepper Restaurants are an
+                    example of gracious dinning, outstanding service,
+                    extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning
+                    destinations in Lahore. From family occasions to business dinner and moments of the heart, this
+                    place is where unforgettable memories are made.</p>
+
+                <p class="mt-6 align-baseline">Terms & conditions Privacy policy</p>
+            </div>
+
+            <div class="list lg:w-[23%] md:w-[30%] sm:w-[40%] w-full mt-3">
+
+                <ul>
+                    <li class="font-bold font-serif mt-0 flex justify-between">
+                        Site Links
+                        <i id="footer-btn" class="fa-solid fa-plus sm:hidden md:hidden lg:hidden flex cursor-pointer"
+                            style="color: white;"></i>
+                    </li>
+                    <div id="hidden-list" class="hidden md:block sm:block lg:block">
+                        <li class="my-3">Home</li>
+                        <li class="my-3">About Us</li>
+                        <li class="my-3">Publications</li>
+                        <li class="my-3">Get a Franchise</li>
+                        <li class="my-3">Feedback</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="contacts lg:w-[23%] md:w-[30%] sm:w-[40%] w-full sm:mt-4">
+                <ul>
+                    <li class="font-bold font-serif lg:mt-0 md:mt-0 sm:mt-0 mt-3 flex justify-between ">
+                        Contact Us
+                        <i id="footer-btnTwo" class="fa-solid fa-plus sm:hidden md:hidden lg:hidden flex cursor-pointer"
+                            style="color: white;"></i>
+                    </li>
+                    <div id="hidden-listTwo" class="hidden md:block sm:block lg:block">
+                        <li class="mt-3 font-bold">Head office Address</li>
+                        <li class="mt-3">Foodconsults (Pvt) Ltd
+                            23-Usman Block, New GardenTown, Lahore, Pakistan</li>
+                        <li class="mt-3 font-bold">Head office number</li>
+                        <li class="mt-3">+92 42 358 509 31</li>
+                        <li class="mt-3">+92 42 358 509 30</li class="mt-3">
+                        <li class="mt-3 font-bold">Email Address</li>
+                        <li class="mt-3">snpfood@brain.net.pk</li>
+                        <li class="mt-3 font-bold">Free delivery number</li>
+                        <li class="mt-3">+92 42 111 100 678</li>
+                        <li class="mt-3">+92 03 111 444 610</li>
+                    </div>
+
+
+                </ul>
+
+            </div>
+            <div
+                class="social-icons lg:w-[23%] md:w-[30%] sm:w-[40%] w-full sm:mt-4 lg:block xl:block md:block sm:block flex justify-center items-center flex-col">
+                <p class="font-bold font-serif xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-5">Follow Us</p>
+                <div class="social-icons">
+
+
+                    <i class="fa-brands fa-facebook  text-3xl mx-2 mt-3 rounded-[50%] cursor-pointer"></i>
+                    <i class="fa-brands fa-instagram  text-3xl mx-2 mt-3 rounded-[50%] cursor-pointer"></i>
+                    <i class="fa-brands fa-x-twitter  text-3xl mx-2 mt-3 rounded-[50%] cursor-pointer"></i>
+                </div>
+                <img class="my-4" src="assets/appstore.webp" alt="">
+                <img class="my-4" src="assets/play.webp" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <footer class="bg-black w-full text-white shadow-[0_-0.5px_0_#D1D5DB] ">
+        <div class="max-w-[80%] h-[50px]  mx-auto font-serif font-bold flex justify-between items-center flex-wrap">
+            <p class="cursor-pointer">&copy;2025</p>
+            <p class="cursor-pointer">powered By Abdul Salam</p>
+        </div>
+    </footer>
+    <!-- footer ended -->
+
+    <script>
+
+        const btnTwo = document.getElementById("footer-btn");
+        const list = document.getElementById("hidden-list");
+
+        btnTwo.addEventListener("click", () => {
+            list.classList.toggle("hidden");
+        });
+
+        const btnThird = document.getElementById("footer-btnTwo");
+        const listTwo = document.getElementById("hidden-listTwo");
+
+        btnThird.addEventListener("click", () => {
+            listTwo.classList.toggle("hidden");
+        });
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
