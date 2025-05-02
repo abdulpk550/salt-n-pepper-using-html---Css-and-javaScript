@@ -57,35 +57,46 @@
 
     <!-- main section started  -->
     <main>
-        <div class="franchise-form">
-            <h1 class="form-heading">Get a Franchise</h1>
-        </div>
+        <div class="container">
+            <h1 class="f-heading">Get a Franchise</h1>
+            <form id="franchiseForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" required />
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="text" name="mobile" id="mobile" required />
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" required />
+                </div>
+                <div class="form-group">
+                    <label for="province">Province</label>
+                    <input type="text" name="province" id="province" required />
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required />
+                </div>
+                <div class="form-group">
+                    <label for="brand">Brands</label>
+                    <input type="text" name="brand" id="brand" placeholder="Which brand are you interested in"
+                        required />
+                </div>
 
-        <div class="inputs">
-            <label for="name">Name</label>
-            <input type="text" id="name" >
-            
-            <label for="email">Email</label>
-            <input type="text" id="email" >
-            
-            <label for="phone">Phone Number</label>
-            <input type="number" id="phone" >
-            
-            <label for="mobile">Mobile Numberr</label>
-            <input type="number" id="mobile" >
-            
-            <label for="city">City</label>
-            <input type="text" id="city" >
-            
-            <label for="province">Province</label>
-            <input type="text" id="province" >
-            
-            <label for="country">Country</label>
-            <input type="text" id="country" >
-            
-            <label for="brand">Brands</label>
-            <input type="text" id="brand" >
-            
+            </form>
+
+            <button type="submit" class="btn">Submit</button>
         </div>
     </main>
     <!-- main section ended -->
@@ -190,6 +201,28 @@
 
         btnThird.addEventListener("click", () => {
             listTwo.classList.toggle("hidden");
+        });
+
+        const form = document.getElementById("franchiseForm");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            let isValid = true;
+            const inputs = form.querySelectorAll("input");
+
+            inputs.forEach((input) => {
+                const parent = input.parentElement;
+                if (!input.value.trim()) {
+                    parent.classList.add("invalid");
+                    isValid = false;
+                } else {
+                    parent.classList.remove("invalid");
+                }
+            });
+
+            if (isValid) {
+                alert("Form submitted successfully!");
+                form.reset();
+            }
         });
     </script>
 
